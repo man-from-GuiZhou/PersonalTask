@@ -4,7 +4,8 @@ public class Player {
 	
 	private int playerId;
 	private String playerName;
-	private int Exp;
+	private String password;
+	private int exp;
 	
 	public int getPlayerId() {
 		return playerId;
@@ -19,14 +20,20 @@ public class Player {
 		this.playerName = playerName;
 	}
 	public int getExp() {
-		return Exp;
+		return exp;
 	}
 	public void setExp(int exp) {
-		Exp = exp;
+		this.exp = exp;
 	}
 	
 	public String toString() {
-		return ""+this.playerId+" "+this.playerName+" "+this.Exp;
+		return ""+this.playerId+" "+this.playerName+" "+this.exp;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 }

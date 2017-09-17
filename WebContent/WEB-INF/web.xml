@@ -2,20 +2,14 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
   <display-name>playTask</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>init.do</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  	<servlet-name>initPlayer</servlet-name>
-  	<servlet-class>controller.IndexController</servlet-class>
-  	<load-on-startup>1</load-on-startup>
+    <servlet-name>initPlayer</servlet-name>
+    <servlet-class>controller.IndexController</servlet-class>
   </servlet>
-  
   <servlet-mapping>
-  	<servlet-name>initPlayer</servlet-name>
-  	<url-pattern>/init.do</url-pattern>
-  </servlet-mapping> 
-  
+    <servlet-name>initPlayer</servlet-name>
+    <url-pattern>/init.do</url-pattern>
+  </servlet-mapping>
 </web-app>

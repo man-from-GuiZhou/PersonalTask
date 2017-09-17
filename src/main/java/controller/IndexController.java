@@ -50,11 +50,6 @@ public class IndexController extends HttpServlet {
 	}
 	
 	public void init() throws ServletException {
-		System.out.println("doGet exe!");
-		PlayerDao pDao = new PlayerDao();
-		LinkedList<Player> PlayList = pDao.selectPlayerList();
-		System.out.println("servlet got: "+PlayList.getFirst().toString());
-		HttpSession session = null; 
-		session.setAttribute("profileList", PlayList); 
+    
 	}
 }
