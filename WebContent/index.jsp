@@ -17,7 +17,7 @@ test hello world
 	<thead>
 		<tr>
 			<th>PlayerID</th><th>PlayerName</th><th>密码</th><th>exp</th><th>用户功能</th>
-		</tr>
+		</tr>   
 	</thead>
 	<tbody> 
 		<c:forEach var="profile" items="${profileList}">
