@@ -11,7 +11,6 @@ import dao.DataSource;
 
 public class SimpleConnection implements DataSource {
 
-	@Override
 	public Connection getConnection() {
 		// TODO Auto-generated method stub
 		InputStream in = SimpleConnection.class.getClassLoader().getResourceAsStream("DB.properties");

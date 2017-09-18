@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
   <display-name>playTask</display-name>
   <welcome-file-list>
     <welcome-file>init.do</welcome-file>
@@ -8,8 +10,8 @@
     <servlet-name>initPlayer</servlet-name>
     <servlet-class>controller.IndexController</servlet-class>
   </servlet>
-  <servlet-mapping>
+  <servlet-mapping> 
     <servlet-name>initPlayer</servlet-name>
     <url-pattern>/init.do</url-pattern>
   </servlet-mapping>
-</web-app>
+</web-app> 

@@ -13,7 +13,7 @@ public class Player {
 	public void setPlayerId(int playerId) {
 		this.playerId = playerId;
 	}
-	public String getPlayerName() {
+	public String getPlayerName() { 
 		return playerName;
 	}
 	public void setPlayerName(String playerName) {

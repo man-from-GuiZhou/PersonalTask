@@ -15,4 +15,4 @@ public interface PlayerDaoInter {
 	public void updatePlayer(String PlayerName,String password);
 	//查询一个用户
 	public Player findByName(String PlayerName); 
-}
+} 

@@ -5,9 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.LinkedList;
 
-import com.mysql.jdbc.Connection;
-
-import bean.Player;
+import bean.Player; 
 import dao.PlayerDaoInter;
 import util.JDBCUtils;
 
@@ -40,7 +38,6 @@ public class PlayerDao implements PlayerDaoInter{
 		return null;
 	}
 
-	@Override
 	public void addPlayer(String PlayerName, String password) {
 		// TODO Auto-generated method stub
 		java.sql.Connection conn = JDBCUtils.getConnection();
@@ -60,7 +57,6 @@ public class PlayerDao implements PlayerDaoInter{
 		JDBCUtils.release(conn, ps, rs);
 	}
 
-	@Override
 	public void removePlayer(int id) {
 		// TODO Auto-generated method stub
 		java.sql.Connection conn = JDBCUtils.getConnection();
@@ -77,13 +73,11 @@ public class PlayerDao implements PlayerDaoInter{
 		JDBCUtils.release(conn, ps, rs);
 	}
 
-	@Override
 	public void updatePlayer(String PlayerName, String password) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public Player findByName(String PlayerName) {
 		// TODO Auto-generated method stub
 		return null;

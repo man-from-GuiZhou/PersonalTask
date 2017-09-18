@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import bean.Player;
-import dao.impl.PlayerDao;
+import dao.impl.PlayerDao; 
 
 /**
  * Servlet implementation class IndexController
@@ -40,7 +40,7 @@ public class IndexController extends HttpServlet {
 		HttpSession session = request.getSession(); 
 		session.setAttribute("profileList", PlayList); 
 		request.getRequestDispatcher("/index.jsp").forward(request, response);
-	}
+	} 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

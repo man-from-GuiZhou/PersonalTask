@@ -50,14 +50,14 @@ public class PlayerEdit extends HttpServlet {
 		case "add":this.addPlayer(request, response);
 			break;
 		case "remove":this.removePlayer(request, response);
-			break;
+			break; 
 		case "updatePage":
 			//Player pInfo = request.getParameter("Player");
 			//request.setAttribute("Player", pInfo);
 			request.getRequestDispatcher("/PlayerEdit.jsp").forward(request, response);
 			break;
 		}
-	}
+	} 
 	
 	private void addPlayer(HttpServletRequest request, HttpServletResponse response) {
 		String playerName = request.getParameter("PlayerName");
@@ -68,7 +68,7 @@ public class PlayerEdit extends HttpServlet {
 			pdi.addPlayer(playerName, password);
 		} catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 	}
 	
