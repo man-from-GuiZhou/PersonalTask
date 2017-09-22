@@ -1,13 +1,14 @@
 /**
  * 
  */
- var $j = jQuery.noConflict();
-$j(".remove").click(function(){
-  $.post("PlayerEdit",
-  { 
-	  PlayerId:${Player.PlayerId};
-  },
-  function(){
-    alert("Ran");
-  });
+$(document).ready(function(){
+    $("button.remove").click(function(){
+        $.post("init.do",{
+              operate:"remove",
+              id:$("button.remove").attr("name")
+            },
+            function(){
+                alert("ajax");
+            });
+    });
 });

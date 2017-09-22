@@ -24,7 +24,7 @@
 				<td>${profile.playerId}</td><td>${profile.playerName}</td><td>${profile.password}</td><td>${profile.exp}</td>
 				<td>
 				<span><!-- <a href="PlayerEdit?operate='remove'&PlayerId=${profile.playerId}">删除这个用户</a> -->
-				<a href="" class="remove">删除这个用户</a>
+				<a href=""><button class="remove" name="${profile.playerId}">删除这个用户</button></a>
 				</span>
 				<span><a href="PlayerEdit?operate='updatePage'&Player=${profile}">修改这个用户</a></span>
 				</td>

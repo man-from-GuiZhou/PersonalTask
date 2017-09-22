@@ -46,7 +46,9 @@ public class IndexController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
+		if(request.getParameter("operate")!=null){
+			System.out.println("get ajax");
+		}
 	}
 	
 	public void init() throws ServletException {
