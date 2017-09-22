@@ -11,7 +11,6 @@
 <title>首页</title>
 </head>
 <body>
-test hello world
 <table>
 	<caption>库文件全貌</caption>
 	<thead>
